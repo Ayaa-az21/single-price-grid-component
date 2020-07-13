@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    top:0; 
+    left: 0; 
+}
+
+body{
+    font-family: 'Karla', sans-serif; 
+  
+    
+}
+h1{
+    font-size: 40px; 
+   color: hsl(171, 100%, 38%); 
+}
+
+span{
+    font-weight: 700; 
+    font-size: 30px; 
+}
+
+.everything{
+    
+position: absolute; 
+   height: 100%; 
+    width: 100%; 
+    display: grid; 
+    grid-template-areas: 
+        'whiteee whiteee'
+        'bluee greene'
+}
+
+.section-1{
+     position: relative; 
+   padding: 50px 10px 10px 70px; 
+    grid-area: whiteee;
+    background-color: #ffffff; 
+}
+.section-1 p{
+     color: hsl(218, 22%, 67%); 
+    font-weight: 700; 
+    font-size: 20px; 
+}
+.section-1 h2{
+    color:hsl(71, 73%, 54%); 
+}
+
+.section-2{
+   padding: 30px 80px; 
+    grid-area: bluee; 
+    background-color: hsl(179, 62%, 43%); 
+     color:  hsl(204, 43%, 93%); 
+}
+.section-3{
+     padding: 30px 80px; 
+    grid-area: greene; 
+    background-color:hsl(179, 51%, 55%) ; 
+    color:  hsl(204, 43%, 93%); 
+}
+ 
+.section-3 p {
+    margin-top: 10px; 
+}
+
+
+.section-1 p , .section-2 p , .section-3 p {
+   
+     
+}
+
+.section-1 , .section-2 , .section-3 {
+
+    
+}
+button{
+    padding: 20px 100px 20px 100px; 
+  background-color:  hsl(71, 73%, 54%);
+    border : none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    color:  hsl(204, 43%, 93%);
+    font-size:16px; 
+    font-weight: 700; 
+    margin-top: 60px; 
+}
+button:hover{
+ background-color:hsl(71, 71%, 42%);   
+}
+@media only screen and (max-width :700px){
+    .everything{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas: 
+            "whiteee"
+            "bluee"
+            "greene"
+        
+    }
+    .section-1, .section-2 , .section-3 {
+        padding-left: 20px; 
+    }
+}
